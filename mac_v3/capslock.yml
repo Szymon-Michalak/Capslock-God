@@ -1254,125 +1254,80 @@ rules:
 
 
       #==========================================================#
-      # ( e ) --> safari / finder / mail                         #
+      # ( e ) --> Brave / Safari / Firefox                       #
       #==========================================================#
-      - description: 'command + e = finder'
+      - description: 'command + e = Safari '
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a finder } ]
+        to: [ { shell_command: open -a safari } ]
 
-      - description: 'option + e = mail'
+      - description: 'option + e = Firefox'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a mail } ]
+        to: [ { shell_command: open -a firefox } ]
 
-      - description: 'e = safari'
+      - description: 'e = Brave'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Safari } ]
+        to: [ { shell_command: open -a safari } ]
 
 
       #==========================================================#
-      # ( r ) --> iterm / preview / terminal                     #
+      # ( r ) --> Spark / Things / Fantastical                   #
       #==========================================================#
-      - description: 'command + r = preview'
+      - description: 'command + r = Things'
         type: basic
         from: { key_code: r, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Preview } ]
+        to: [ { shell_command: open -a things } ]
 
-      - description: 'option + r = terminal'
+      - description: 'option + r = Fantastical'
         type: basic
         from: { key_code: r, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a terminal } ]
+        to: [ { shell_command: open -a fantastical } ]
 
-      - description: 'r = iTerm2'
+      - description: 'r = Spark'
         type: basic
         from: { key_code: r, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a iTerm } ]
+        to: [ { shell_command: open -a spark } ]
 
       #==========================================================#
-      # ( t ) --> vscode / typora / notes                        #
+      # ( t ) --> Sketch / Photoshop / Illustrator               #
       #==========================================================#
-      - description: 'command + t = typora'
+      - description: 'command + t = Illustrator'
         type: basic
         from: { key_code: t, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Typora } ]
+        to: [ { shell_command: open -a illustrator } ]
 
-      - description: 'option + t = notes'
+      - description: 'option + t = Photoshop'
         type: basic
         from: { key_code: t, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a notes } ]
+        to: [ { shell_command: open -a photoshop } ]
 
-      - description: 't = vscode'
+      - description: 't = Sketch'
         type: basic
         from: { key_code: t, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Visual Studio Code' } ]
+        to: [ { shell_command: open -a sketch } ]
 
       #==========================================================#
-      # ( y ) --> siri / karabiner / amphetamine                 #
+      # ( y ) --> Finder / Obsidian / Bitwarden                  #
       #==========================================================#
-      - description: 'command + y = karabiner'
+      - description: 'command + y = Obsidian'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Karabiner-Elements } ]
+        to: [ { shell_command: open -a obsidian } ]
 
-      - description: 'option + y = amphetamine'
+      - description: 'option + y = Bitwarden'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a amphetamine } ]
+        to: [ { shell_command: open -a bitwarden } ]
 
-      - description: 'y = Siri'
+      - description: 'y = Finder'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Siri } ]
+        to: [ { shell_command: open -a finder } ]
 
       #==========================================================#
-      # ( f ) --> alfred 4 / Dash / Dictionary                   #
-      #==========================================================#
-      - description: 'command + f = Dash'
-        type: basic
-        from: { key_code: f, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Dash } ]
-
-      - description: 'option + f = Dictionary'
-        type: basic
-        from: { key_code: f, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Dictionary } ]
-
-      - description: 'f = Alfred 4'
-        type: basic
-        from: { key_code: f, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Alfred 4' } ]
-
-      #==========================================================#
-      # ( g ) --> idea / chrome / calender                       #
-      #==========================================================#
-      - description: 'command + g = Chrome'
-        type: basic
-        from: { key_code: g, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Google Chrome' } ]
-
-      - description: 'option + g = Calender'
-        type: basic
-        from: { key_code: g, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Calendar } ]
-
-      - description: 'g = Intellij IDEA'
-        type: basic
-        from: { key_code: g, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'IntelliJ IDEA' } ]
-
-
-
-
-  ################################################################
-  #                       Hyper Terminal                         #
-  ################################################################
-  - description: Hyper Terminal
-    manipulators:
-
-      #==========================================================#
-      # ( d ) -->  Ctrl-D (EOF)   |  Define                      #
+      # ( d ) --> Spotify / Slack / Zoom                         #
       #==========================================================#
       - description: 'command + d = define'
         type: basic
@@ -1383,6 +1338,66 @@ rules:
         type: basic
         from: { key_code: d, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: d , modifiers: [ left_control ] } ]
+
+        - description: 'command + d = Spotify'
+        type: basic
+        from: { key_code: d, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a spotify } ]
+
+      - description: 'option + d = Slack'
+        type: basic
+        from: { key_code: d, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a slack } ]
+
+      - description: 'd = Zoom'
+        type: basic
+        from: { key_code: d, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a zoom } ]
+
+      #==========================================================#
+      # ( f ) --> iTerm2 / Dash / Snip                           #
+      #==========================================================#
+      - description: 'command + f = Dash'
+        type: basic
+        from: { key_code: f, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a Dash } ]
+
+      - description: 'option + f = Snip'
+        type: basic
+        from: { key_code: f, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a snip } ]
+
+      - description: 'f = iTerm2'
+        type: basic
+        from: { key_code: f, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a iterm2 } ]
+
+      #==========================================================#
+      # ( g ) --> Visual Studio Code / GitHub / Docker                       #
+      #==========================================================#
+      - description: 'command + g = GitHub'
+        type: basic
+        from: { key_code: g, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a github } ]
+
+      - description: 'option + g = Docker'
+        type: basic
+        from: { key_code: g, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a docker } ]
+
+      - description: 'g = Visual Studio Code'
+        type: basic
+        from: { key_code: g, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open -a 'Visual Studio Code' } ]
+
+
+
+
+  ################################################################
+  #                       Hyper Terminal                         #
+  ################################################################
+  - description: Hyper Terminal
+    manipulators:
 
       #==========================================================#
       # ( z ) -->  Ctrl-Z (SIGTSTP)  |  F5 (VS Code Debug)       #
